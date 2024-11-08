@@ -1,0 +1,308 @@
+.card-about-wrapper {
+    max-width: 1224px;
+    width: 100%;
+    height: 820px;
+    height: fit-content;
+    border-radius: 40px;
+    border: 4px solid #2E2E2E;
+    background: #171717;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 100px 80px;
+
+    gap: 75px;
+
+    @media #{$lg-layout} {
+        height: vw(700px, $base-lg-vw);
+        gap: vw(36px, $base-lg-vw);
+        max-width: vw(1224px, $base-lg-vw);
+        border-radius: vw(40px, $base-lg-vw);
+
+        padding: vw(100px, $base-lg-vw) vw(80px, $base-lg-vw);
+
+    }
+
+    @media #{$sm-layout} {
+        height: vw(633px, $base-sm-vw);
+        flex-direction: column;
+        gap: vw(10px, $base-sm-vw);
+        max-width: vw(360px, $base-sm-vw);
+        border-radius: vw(24.51px, $base-sm-vw);
+
+        padding: vw(70px, $base-sm-vw) vw(16px, $base-sm-vw) vw(40px, $base-sm-vw);
+    }
+
+
+    &.card-wrapper-1 {
+        top: 40px;
+        overflow: hidden;
+
+        .lottie-wrapper {
+            #lottie {
+                @media #{$sm-layout} {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            svg {
+                @media #{$sm-layout} {
+                    width: 80% !important;
+                }
+            }
+        }
+    }
+
+    &.card-wrapper-2 {
+        top: 45px;
+        overflow: hidden;
+
+    }
+
+    &.card-wrapper-3 {
+        top: 50px;
+    }
+
+    .content {
+        max-width: 524px;
+
+        @media #{$lg-layout} {
+            max-width: vw(524px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            max-width: vw(524px, $base-sm-vw);
+        }
+
+        h3 {
+            color: #FFF;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 66px;
+            letter-spacing: -1.8px;
+
+            @media #{$lg-layout} {
+                font-size: vw(60px, $base-lg-vw);
+                letter-spacing: vw(-1.8px, $base-lg-vw);
+                line-height: vw(66px, $base-lg-vw);
+
+                margin-bottom: vw(40px, $base-lg-vw);
+
+            }
+
+            @media #{$sm-layout} {
+                text-align: center;
+                font-size: vw(36.765px, $base-sm-vw);
+                letter-spacing: vw(-1.103px, $base-sm-vw);
+                line-height: vw(40.441px, $base-sm-vw);
+
+                margin-bottom: vw(24px, $base-sm-vw);
+            }
+        }
+
+        p {
+            color: #7A7A7A;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 38px;
+            /* 126.667% */
+            letter-spacing: -0.9px;
+
+            @media #{$lg-layout} {
+                font-size: vw(30px, $base-lg-vw);
+                letter-spacing: vw(-0.9px, $base-lg-vw);
+                line-height: vw(38px, $base-lg-vw);
+
+            }
+
+            @media #{$sm-layout} {
+                text-align: center;
+                font-size: vw(18.382px, $base-sm-vw);
+                letter-spacing: vw(-0.551px, $base-sm-vw);
+                line-height: vw(23.284px, $base-sm-vw);
+
+                margin-bottom: vw(10px, $base-sm-vw);
+            }
+        }
+    }
+
+    .lottie-wrapper {
+        max-width: 451px;
+
+        @media #{$lg-layout} {
+            max-width: vw(480px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            max-width: vw(300px, $base-sm-vw);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            max-height: 297px;
+
+            @media #{$lg-layout} {
+                max-width: vw(421px, $base-lg-vw);
+                max-height: vw(613px, $base-lg-vw);
+            }
+
+            @media #{$sm-layout} {
+                max-width: vw(300px, $base-sm-vw);
+                max-height: vw(297px, $base-sm-vw);
+            }
+        }
+    }
+
+}
+
+
+.card-road-wrapper {
+    width: 265px;
+    height: 493px;
+
+    padding: 33px 32px 26px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    @media #{$lg-layout} {
+        width: vw(265px, $base-lg-vw);
+        height: vw(493px, $base-lg-vw);
+
+        padding: vw(33px, $base-lg-vw) vw(32px, $base-lg-vw) vw(26px, $base-lg-vw);
+
+        gap: vw(20px, $base-lg-vw);
+    }
+
+    @media #{$sm-layout} {
+        width: vw(265px, $base-sm-vw);
+        height: vw(493px, $base-sm-vw);
+
+        padding: vw(33px, $base-sm-vw) vw(32px, $base-sm-vw) vw(26px, $base-sm-vw);
+
+        gap: vw(20px, $base-sm-vw);
+    }
+
+    .bg-wrapper {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .road-img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @media #{$lg-layout} {
+            gap: vw(4px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            gap: vw(4px, $base-sm-vw);
+        }
+
+        .heading {
+            text-align: center;
+            color: #8bbffa;
+            font-size: 8px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+
+            margin-bottom: 0;
+
+            @media #{$lg-layout} {
+                font-size: vw(8px, $base-lg-vw);
+                letter-spacing: vw(-0.24px, $base-lg-vw);
+
+            }
+
+            @media #{$sm-layout} {
+                font-size: vw(8px, $base-sm-vw);
+                letter-spacing: vw(-0.24px, $base-sm-vw);
+            }
+        }
+
+        .days-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 12px;
+
+            @media #{$lg-layout} {
+                gap: vw(12px, $base-lg-vw);
+            }
+
+            @media #{$sm-layout} {
+                gap: vw(12px, $base-sm-vw);
+            }
+
+            .icon {
+                width: 24px;
+                height: auto;
+
+                @media #{$lg-layout} {
+                    width: vw(24px, $base-lg-vw);
+                }
+
+                @media #{$sm-layout} {
+                    width: vw(24px, $base-sm-vw);
+                }
+            }
+
+            p {
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.54px;
+
+                margin-bottom: 0;
+
+                @media #{$lg-layout} {
+                    font-size: vw(18px, $base-lg-vw);
+                    letter-spacing: vw(-0.54px, $base-lg-vw);
+
+                }
+
+                @media #{$sm-layout} {
+                    font-size: vw(18px, $base-sm-vw);
+                    letter-spacing: vw(-0.54px, $base-sm-vw);
+                }
+            }
+        }
+    }
+}

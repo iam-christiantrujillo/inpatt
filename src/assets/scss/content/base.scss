@@ -1,0 +1,48 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.download-btn-main {
+  width: fit-content;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  z-index: 1000;
+
+  @media #{$lg-layout} {
+      bottom: vw(40px, $base-lg-vw);
+
+  }
+
+  @media #{$sm-layout} {
+      bottom: vw(40px, $base-sm-vw);
+  }
+}

@@ -1,0 +1,120 @@
+.hero-wrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+
+    background: linear-gradient(270deg, #18B0C9,#787AE8, #3371C8 );
+    background-size: 1200% 1200%;
+
+    -webkit-animation: AnimationBg 30s ease infinite;
+    -moz-animation: AnimationBg 30s ease infinite;
+    animation: AnimationBg 30s ease infinite;
+
+    .bg-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        z-index: 10;
+
+        // @media #{$sm-layout} {
+        //     top: vw(301px, $base-sm-vw);
+        // }
+
+        @media #{$lg-layout} {
+            top: vw(200px, $base-lg-vw);
+        }
+
+        .content-des {
+            position: relative;
+
+            .secondary-text {
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -2.7px;
+
+            @media #{$lg-layout} {
+                font-size: vw(90px, $base-lg-vw);
+                letter-spacing: vw(-2.7px, $base-lg-vw);
+
+            }
+
+            @media #{$sm-layout} {
+                font-size: vw(49.724px, $base-sm-vw);
+                letter-spacing: vw(-1.492px, $base-sm-vw);
+                line-height: 100%;
+
+                margin-bottom: vw(19px, $base-sm-vw);
+                max-width: vw(385px, $base-sm-vw);
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 37.114px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -1.113px;
+
+            @media #{$lg-layout} {
+                font-size: vw(37.114px, $base-lg-vw);
+                letter-spacing: vw(-1.113px, $base-lg-vw);
+
+            }
+
+            @media #{$sm-layout} {
+                font-size: vw(20px, $base-sm-vw);
+                letter-spacing: vw(-0.6px, $base-sm-vw);
+            }
+        }
+    }
+
+    .spiral {
+        color: transparent;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 1460px;
+        height: auto;
+        z-index: 1;
+
+        @media #{$lg-layout} {
+            width: vw(1104px, $base-lg-vw);
+            bottom: vw(-302px, $base-lg-vw);
+
+        }
+
+        @media #{$sm-layout} {
+            width: vw(980px, $base-sm-vw);
+            right: -60%;
+            bottom: vw(-170px, $base-sm-vw);
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.download-btn-wrapper {
+    border-radius: 80px;
+    background: #1F1F1F;
+    display: inline-flex;
+    padding: 12px;
+    align-items: center;
+    gap: 24px;
+
+    @media #{$lg-layout} {
+        border-radius: vw(80px, $base-lg-vw);
+        padding: vw(12px, $base-lg-vw);
+        gap: vw(24px, $base-lg-vw);
+    }
+
+    @media #{$sm-layout} {
+        border-radius: vw(80px, $base-sm-vw);
+        padding: vw(12px, $base-sm-vw);
+        gap: vw(24px, $base-sm-vw);
+    }
+
+    .brand-logo {
+        display: flex;
+        padding: 0px 12px 0px 32px;
+
+        @media #{$lg-layout} {
+            padding: 0px vw(12px, $base-lg-vw) 0px vw(32px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            padding: 0px vw(12px, $base-sm-vw) 0px vw(32px, $base-sm-vw);
+        }
+
+        img {
+            width: 108px;
+            height: auto;
+
+            @media #{$lg-layout} {
+                width: vw(108px, $base-lg-vw);
+            }
+
+            @media #{$sm-layout} {
+                width: vw(108px, $base-sm-vw);
+            }
+        }
+    }
+
+    .btn-wrapper {
+        a {
+            button {
+                display: flex;
+                padding: 8px 24px;
+                align-items: center;
+                gap: 4px;
+                border-radius: 80px;
+                background: #8bbffa;
+
+                color: #1F1F1F;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.48px;
+
+                @media #{$lg-layout} {
+                    padding: vw(8px, $base-lg-vw) vw(24px, $base-lg-vw);
+                    gap: vw(4px, $base-lg-vw);
+                    border-radius: vw(80px, $base-lg-vw);
+
+                    font-size: vw(16px, $base-lg-vw);
+                    letter-spacing: vw(-0.48px, $base-lg-vw);
+                }
+
+                @media #{$sm-layout} {
+                    padding: vw(8px, $base-sm-vw) vw(24px, $base-sm-vw);
+                    gap: vw(4px, $base-sm-vw);
+                    border-radius: vw(80px, $base-sm-vw);
+
+                    font-size: vw(16px, $base-sm-vw);
+                    letter-spacing: vw(-0.48px, $base-sm-vw);
+                }
+
+                img {
+                    width: 24px;
+                    height: auto;
+
+                    @media #{$lg-layout} {
+                        width: vw(24px, $base-lg-vw);
+                    }
+
+                    @media #{$sm-layout} {
+                        width: vw(24px, $base-sm-vw);
+                    }
+                }
+            }
+        }
+    }
+}
