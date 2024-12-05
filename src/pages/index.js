@@ -69,20 +69,20 @@ export default function Home() {
 
       // Hero Transition
 
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.hero-wrapper',
-          pin: true,
-          start: 'top top',
-          end: '+=1000',
-          scrub: 1,
-        }
-      });
+      // let tl = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: '.hero-wrapper',
+      //     pin: true,
+      //     start: 'top top',
+      //     end: '+=1000',
+      //     scrub: 1,
+      //   }
+      // });
 
-      tl.add('start')
-        .fromTo('.hero-wrapper .content .primary-text', { opacity: 1 }, { opacity: 0 }, "start")
-        .fromTo('.hero-wrapper .content .secondary-text', { opacity: 0 }, { opacity: 1 }, "start")
-        .fromTo('.hero-wrapper .content', { scale: 1 }, { scale: 1.1 }, "start")
+      // tl.add('start')
+      //   .fromTo('.hero-wrapper .content .primary-text', { opacity: 1 }, { opacity: 0 }, "start")
+      //   .fromTo('.hero-wrapper .content .secondary-text', { opacity: 0 }, { opacity: 1 }, "start")
+      //   .fromTo('.hero-wrapper .content', { scale: 1 }, { scale: 1.1 }, "start")
 
 
       // Words Up
@@ -149,40 +149,46 @@ export default function Home() {
 
       // Parallax
 
-      const parallax = gsap.utils.toArray(".parallax-wrapper");
+      let mm = gsap.matchMedia();
 
-      parallax.forEach((item) => {
-        const insideP = item.querySelectorAll(".parallax")
-        const insideR = item.querySelectorAll(".parallax-reverse")
+      mm.add("(min-width: 1030px)", () => {
+        const parallax = gsap.utils.toArray(".parallax-wrapper");
 
-        insideP.forEach((ele) => {
-          gsap.fromTo(ele, { yPercent: 15, }, {
-            yPercent: -15,
-            ease: "none",
-            scrollTrigger: {
-              trigger: item,
-              start: "top bottom", // the default values
-              // end: "bottom top",
-              // markers: true,
-              scrub: true
-            },
-          });
+        parallax.forEach((item) => {
+          const insideP = item.querySelectorAll(".parallax")
+          const insideR = item.querySelectorAll(".parallax-reverse")
+
+          insideP.forEach((ele) => {
+            gsap.fromTo(ele, { yPercent: 15, }, {
+              yPercent: -15,
+              ease: "none",
+              scrollTrigger: {
+                trigger: item,
+                start: "top bottom", // the default values
+                // end: "bottom top",
+                // markers: true,
+                scrub: true
+              },
+            });
+          })
+
+          insideR.forEach((ele) => {
+            gsap.fromTo(ele, { yPercent: -15, }, {
+              yPercent: 15,
+              ease: "none",
+              scrollTrigger: {
+                trigger: item,
+                start: "top bottom", // the default values
+                end: "bottom top",
+                // markers: true,
+                scrub: true
+              },
+            });
+          })
         })
+      });
 
-        insideR.forEach((ele) => {
-          gsap.fromTo(ele, { yPercent: -15, }, {
-            yPercent: 15,
-            ease: "none",
-            scrollTrigger: {
-              trigger: item,
-              start: "top bottom", // the default values
-              end: "bottom top",
-              // markers: true,
-              scrub: true
-            },
-          });
-        })
-      })
+
 
 
       const cards = gsap.utils.toArray(".card-about-wrapper");
@@ -230,7 +236,7 @@ export default function Home() {
     <>
       <Head>
         <title>INPATT</title>
-        <meta name="description" content="Repositorio de Patrones" />
+        <meta name="description" content="Somos una plataforma colaborativa para diseñadores de moda." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

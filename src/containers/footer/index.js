@@ -11,8 +11,8 @@ const Footer = () => {
 
             <div className="banner-wrapper gsapFadeIn">
                 <Image src={logo} alt="Pausa" />
-                <p>INPATT es la puerta hacia la digitalizacón de la moda.</p>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+                <p>La puerta hacia la digitalizacón de la moda</p>
+                <h4>¡Lleva tus ideas al siguiente nivel y haz que tu creatividad inspire al mundo!</h4>
             </div>
 
             <div className="bottom-wrapper gsapFadeIn">

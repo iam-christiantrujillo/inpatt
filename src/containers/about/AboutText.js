@@ -7,7 +7,7 @@ const AboutText = () => {
 
             <div className="content">
                 <h2>
-                    <span className="highlighted wordsUp">INPATT</span> <span className="gsapFadeIn">es la puerta a la digitalización de patrones.</span>
+                    <span className="highlighted wordsUp">INPATT</span> <span className="gsapFadeIn">democratiza el diseño de patrones para colaboración abierta, sostenible y accesible.</span>
                 </h2>
             </div>
 

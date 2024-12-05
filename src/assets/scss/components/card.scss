@@ -114,9 +114,9 @@
             letter-spacing: -0.9px;
 
             @media #{$lg-layout} {
-                font-size: vw(30px, $base-lg-vw);
+                font-size: vw(20px, $base-lg-vw);
                 letter-spacing: vw(-0.9px, $base-lg-vw);
-                line-height: vw(38px, $base-lg-vw);
+                line-height: vw(32px, $base-lg-vw);
 
             }
 
@@ -174,6 +174,8 @@
     display: flex;
 
     flex-direction: column;
+
+    justify-content: center;
 
     gap: 20px;
 

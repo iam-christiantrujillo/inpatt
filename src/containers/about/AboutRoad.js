@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import users from "@/assets/img/about/users.png"
 
-import road1 from "@/assets/img/about/road1.png"
-import road2 from "@/assets/img/about/road2.png"
-import road3 from "@/assets/img/about/road3.png"
+import road1 from "@/assets/img/about/plan1.png"
+import road2 from "@/assets/img/about/plan2.png"
+import road3 from "@/assets/img/about/plan3.png"
 
 import RoadCard from "@/components/card/RoadCard";
 
@@ -15,11 +15,9 @@ const AboutRoad = () => {
         <div className="about-road-wrapper">
 
             <div className="content gsapFadeIn">
-                <h3>Encuentra aliados
-                    en tu camino</h3>
+                <h3>Planes Flexibles para Cada Necesidad</h3>
 
-                <p>Únete a los más de 3 millones de usuarios que están
-                    cambiando sus marcas con nuestra herramienta.</p>
+                <p>Desde diseñadores independientes hasta equipos y grandes empresas, tenemos un plan para ti.</p>
 
                 <div className="users-wrapper">
                     <Image src={users} alt="Users" />
@@ -31,22 +29,22 @@ const AboutRoad = () => {
 
             <div className="cards-road-wrapper parallax-wrapper">
                 <RoadCard
-                    heading={"Respiración resonante"}
-                    description={"71 días de racha"}
+                    heading={"Organizar y comparte"}
+                    description={"Individual"}
                     img={road1}
                     className={"card-1 parallax"}
                 />
 
                 <RoadCard
-                    heading={"Respiración cuadrada"}
-                    description={"13 días de racha"}
+                    heading={"Trabajos colaborativos"}
+                    description={"Equipo"}
                     img={road2}
                     className={"card-2 parallax-reverse"}
                 />
 
                 <RoadCard
-                    heading={"Respiración Método Wim Hof"}
-                    description={"121 días de racha"}
+                    heading={"Gestionar equipos y accesos"}
+                    description={"Empresa"}
                     img={road3}
                     className={"card-3 parallax"}
                 />

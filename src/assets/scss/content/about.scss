@@ -9,6 +9,8 @@
 
     position: relative;
 
+    padding: 0 10%;
+
     .content {
         max-width: 1049px;
         margin: 0 auto;
@@ -189,9 +191,9 @@
             letter-spacing: -1.8px;
 
             @media #{$lg-layout} {
-                font-size: vw(60px, $base-lg-vw);
+                font-size: vw(50px, $base-lg-vw);
                 letter-spacing: vw(-1.8px, $base-lg-vw);
-                line-height: vw(66px, $base-lg-vw);
+                line-height: vw(62px, $base-lg-vw);
 
                 margin-bottom: vw(19px, $base-lg-vw);
 
@@ -287,6 +289,10 @@
         display: flex;
         gap: 19px;
 
+        @media #{$sm-layout} {
+            flex-direction: column;
+        }
+
         @media #{$lg-layout} {
             gap: vw(19px, $base-lg-vw);
 
@@ -310,11 +316,10 @@
 
             @media #{$lg-layout} {
                 top: vw(110px, $base-lg-vw);
-
             }
 
             @media #{$sm-layout} {
-                display: none;
+                top: auto;
             }
         }
 
@@ -328,7 +333,7 @@
             }
 
             @media #{$sm-layout} {
-                display: none;
+                top: auto;
             }
         }
 

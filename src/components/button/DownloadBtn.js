@@ -12,7 +12,7 @@ const DownloadBtn = ({className}) => {
             </div>
 
             <div className="btn-wrapper">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://inpatt-app.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <button>
                         {/* <Image src={apple} alt="Apple"/> */}
                         <span>Crear cuenta</span>
